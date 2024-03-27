@@ -17,3 +17,6 @@ Math.round(num3);
 let currentDate = new Date();
 console.log(currentDate);
 
+const j = [52, 53, 49, 77, 21, 32];
+console.log(Math.max(...j));
+console.log(Math.min(...j));
