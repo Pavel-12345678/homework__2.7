@@ -50,9 +50,15 @@ ${date.getMinutes()}:${date.getSeconds()}`;
 console.log(formatDate(new Date()));
 
 let fruits = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
-fruits.toLowerCase() = fruits.sort(() => Math.random() - 0.5);
+let fruits1 = фрукты;
+if (fruits.toLowerCase() === fruits1.toLowerCase()) {
+   alert ('Правильный ответ!');
+} else {
+   alert ('Не угадал.Правильный ответ: ${fruits1}');
+}
+fruits = fruits.sort(() => Math.random() - 0.5);
 alert(fruits);
-let firstGuess = promt('Чему равняется первый элемент массива?');
+let firstGuess = prompt('Чему равняется первый элемент массива?');
 let lastGuess = prompt('Чему равняется последний элемент массива?');
 if (firstGuess === fruits[0] && lastGuess === fruits[fruits.length - 1]) {
    alert('Поздравляем! Вы угадали оба слова');

@@ -403,6 +403,8 @@ a {
     padding-left: 0px;
     padding-right: 0px;
     text-decoration: none;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
   }
   .footer_heading__2 {
     text-align: center;
