@@ -35,11 +35,11 @@ function randomNumbers(n) {
    return Math.ceil(Math.random() * (max - min + 1) + min);
  };
 
- console.log(new Date()):
+ console.log(new Date());
 
- let currentDate = new Date();
- currentDate.setDate(currentDate.getDate() + 73);
- console.log(currentDate);
+ let currentDate1 = new Date();
+ currentDate1.setDate(currentDate1.getDate() + 73);
+ console.log(currentDate1);
 
  function formatDate(date)  {
    let days = ['Воскресенье', 'Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота'];
@@ -49,7 +49,8 @@ ${date.getMinutes()}:${date.getSeconds()}`;
    } 
 console.log(formatDate(new Date()));
 
-let fruits = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+function fruitGame() {
+   let fruits = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
 let fruits1 = фрукты;
 if (fruits.toLowerCase() === fruits1.toLowerCase()) {
    alert ('Правильный ответ!');
@@ -69,5 +70,5 @@ else if (firstGuess === fruits[0] || lastGuess === fruits[fruits.length - 1]) {
 else {
    alert('Вы не угадали ни одного слова');
 }
-
+}
 
