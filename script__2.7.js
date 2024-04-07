@@ -50,21 +50,15 @@ ${date.getMinutes()}:${date.getSeconds()}`;
 console.log(formatDate(new Date()));
 
 function fruitGame() {
-   let fruits = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
-let fruits1 = фрукты;
-if (fruits.toLowerCase() === fruits1.toLowerCase()) {
-   alert ('Правильный ответ!');
-} else {
-   alert ('Не угадал.Правильный ответ: ${fruits1}');
-}
+let fruits = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
 fruits = fruits.sort(() => Math.random() - 0.5);
 alert(fruits);
 let firstGuess = prompt('Чему равняется первый элемент массива?');
 let lastGuess = prompt('Чему равняется последний элемент массива?');
-if (firstGuess === fruits[0] && lastGuess === fruits[fruits.length - 1]) {
+if (firstGuess === fruits[0].toLowerCase() && lastGuess === fruits[fruits.length - 1].toLowerCase()) {
    alert('Поздравляем! Вы угадали оба слова');
 }
-else if (firstGuess === fruits[0] || lastGuess === fruits[fruits.length - 1]) {
+else if (firstGuess === fruits[0].toLowerCase() || lastGuess === fruits[fruits.length - 1].toLowerCase()) {
    alert('Вы близки к победе!');
 }
 else {
