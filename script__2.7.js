@@ -55,6 +55,10 @@ fruits = fruits.sort(() => Math.random() - 0.5);
 alert(fruits);
 let firstGuess = prompt('Чему равняется первый элемент массива?');
 let lastGuess = prompt('Чему равняется последний элемент массива?');
+if (!firstGuess || !lastGuess) {
+   alert ('Вы не ввели ответы!');
+   return;
+}
 if (firstGuess === fruits[0].toLowerCase() && lastGuess === fruits[fruits.length - 1].toLowerCase()) {
    alert('Поздравляем! Вы угадали оба слова');
 }
