@@ -59,6 +59,8 @@ if (!firstGuess || !lastGuess) {
    alert ('Вы не ввели ответы!');
    return;
 }
+firstGuess = firstGuess.toLowerCase();
+lastGuess = lastGuess.toLowerCase();
 if (firstGuess === fruits[0].toLowerCase() && lastGuess === fruits[fruits.length - 1].toLowerCase()) {
    alert('Поздравляем! Вы угадали оба слова');
 }
